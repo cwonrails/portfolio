@@ -16,8 +16,8 @@
 <script>
     import store from '../../store';
     import Spinner from '../../components/spinner/Spinner';
-    import CONSTANTS from '../../constants';
-    import { GithubRes } from '../../resources/resources';
+    import CONSTANTS from '../../utils/constants';
+    import { GithubRes } from '../../resources';
 
     export default {
         name: 'projects',

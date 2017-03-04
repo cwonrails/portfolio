@@ -13,7 +13,7 @@
     import router from './../../router';
     import Hamburger from './hamburger/Hamburger';
     import sidenavData from './sidenav.data';
-    import CONSTANTS from '../../constants';
+    import CONSTANTS from '../../utils/constants';
 
     export default {
         name: 'sidenav',

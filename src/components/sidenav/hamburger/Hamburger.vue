@@ -7,7 +7,7 @@
 </template>
 
 <script>
-    import CONSTANTS from '../../../constants';
+    import CONSTANTS from '../../../utils/constants';
 
     export default {
         name: 'hamburger',

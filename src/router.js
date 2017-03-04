@@ -6,7 +6,7 @@ import Home from './views/home/Home';
 import Projects from './views/projects/Projects';
 import About from './views/about/About';
 
-import CONSTANTS from './constants';
+import CONSTANTS from './utils/constants';
 import store from './store';
 
 Vue.use(Router);
