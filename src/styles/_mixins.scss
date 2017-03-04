@@ -1,0 +1,21 @@
+@mixin mobile-width-breakpoint {
+    @media (max-width: $width-breakpoint) { @content; }
+}
+
+@mixin mobile-height-breakpoint {
+    @media (max-height: $height-breakpoint) { @content; }
+}
+
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin common-transition {
+    transition: all .5s ease;
+}

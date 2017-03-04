@@ -1,0 +1,108 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+div.home {
+    overflow: auto;
+    section {
+        width: $common-block-width;
+        header.profile-card {
+            padding-bottom: 30px;
+            border-bottom: 2px solid $orange-color;
+            @include flex-row;
+            .picture {
+                width: 125px;
+                height: 125px;
+                margin-right: 40px;
+            }
+            .details {
+                @include flex-col;
+                justify-content: center;
+                h1,
+                h2 {
+                    display: block;
+                    margin-top: 0;
+                    margin-bottom: 10px;
+                }
+                h2 {
+                    font-weight: 100;
+                    color: rgba($black-color, 0.7);
+                }
+            }
+        }
+        article {
+            margin: 30px 0px;
+        }
+        footer ul {
+            @include flex-row;
+            flex-wrap: wrap;
+            li.link {
+                width: 33.33%;
+                @include flex-row;
+                align-items: center;
+                font-size: 16px;
+                font-family: Lato, serif;
+                margin-bottom: 15px;
+                transition: color linear .4s;
+                color: $black-color;
+                i {
+                    margin-right: 10px;
+                    font-size: 25px;
+                }
+                a {
+                    transition: none;
+                    color: inherit;
+                }
+                &:hover {
+                    cursor: pointer;
+                    color: $orange-color;
+                }
+            }
+        }
+    }
+}
+
+@include mobile-width-breakpoint {
+    div.home {
+        section {
+            width: 100%;
+            padding: 80px 50px;
+            header.profile-card {
+                display: block;
+                text-align: center;
+                padding-bottom: 15px;
+                .picture {
+                    margin: auto;
+                    margin-bottom: 15px;
+                }
+            }
+            article {
+                margin: 25px 0px;
+            }
+            footer ul {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+}
+
+@include mobile-height-breakpoint {
+    div.home {
+        display: block;
+        section {
+            width: 100%;
+            display: block;
+            padding: 25px 50px;
+            header {
+                .picture {
+                    display: none;
+                }
+                .details {
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+@import './colors';
+@import './mixins';
+@import './fonts';
+
+$width-breakpoint: 600px;
+$height-breakpoint: 500px;
+$common-block-width: 500px;
+$sidenav-width: 300px;
+$backdrop-layer: 2;
+$first-layer: 4;
+$second-layer: 3;

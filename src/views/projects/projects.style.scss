@@ -1,0 +1,21 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+div.projects {
+    a {
+        color: $black-color;
+        font-size: 30px;
+        &:hover {
+            color: $orange-color;
+        }
+    }
+    section {
+        @include common-transition;
+    }
+}
+
+@include mobile-width-breakpoint {
+    div.projects {
+        text-align: center;
+        padding: 100px 25px;
+    }
+}

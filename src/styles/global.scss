@@ -1,0 +1,81 @@
+@import './variables';
+@import './animations.scss';
+@import url('./assets/icons/foundation-icons/foundation-icons.css');
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+#app,
+.view {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Roboto, serif;
+    color: $black-color;
+    background-color: $soft-white-color;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.view {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include common-transition;
+    @include mobile-width-breakpoint {
+        display: block;
+    }
+}
+
+a {
+    transition: color linear .4s;
+    color: rgba($orange-color, 0.6);
+    text-decoration: none;
+    &:hover {
+        cursor: pointer;
+        color: $orange-color;
+        text-decoration: none;
+    }
+    &:focus,
+    &:visited,
+    &:active {
+        outline: none;
+        text-decoration: none;
+    }
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h1,
+h2 {
+    font-family: Lato, serif;
+    font-weight: bold;
+}
+
+p {
+    font-size: 16px;
+}
+
+.bold {
+    font-weight: bold;
+}

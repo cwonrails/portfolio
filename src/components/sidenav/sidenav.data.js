@@ -1,0 +1,16 @@
+export default {
+    links: [
+        {
+            key: 'Home',
+            path: '/'
+        },
+        {
+            key: 'About',
+            path: '/about'
+        },
+        {
+            key: 'Projects',
+            path: '/projects'
+        }
+    ]
+};
