@@ -1,6 +1,8 @@
 <template>
     <div class="sidenav-wrapper">
-        <hamburger></hamburger>
+        <transition name="viewFade" appear>
+            <hamburger></hamburger>
+        </transition>
         <aside class="sidenav-container" v-bind:class="sidenavStatus">
             <ul>
                 <li v-for="link in links" :key="link.path" @click="navigate(link)" v-bind:class="linkClass(link)">{{ link.key }}</li>
