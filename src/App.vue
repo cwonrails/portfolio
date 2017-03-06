@@ -1,9 +1,9 @@
 <template>
     <div id="app">
-        <backdrop key="backdrop"></backdrop>
-        <sidenav key="sidenav"></sidenav>
+        <backdrop></backdrop>
+        <sidenav></sidenav>
         <transition name="viewFade" appear>
-            <router-view key="view"></router-view>
+            <router-view></router-view>
         </transition>
     </div>
 </template>
