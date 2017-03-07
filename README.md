@@ -1,19 +1,7 @@
-# portfolio
+<p align="center">
+  <a href="https://travis-ci.org/GMaiolo/subscribr"><img src="https://api.travis-ci.org/GMaiolo/portfolio-vue2.2.svg" alt="travis"></a>
+  <a href="https://david-dm.org/GMaiolo/subscribr"><img src="https://david-dm.org/GMaiolo/portfolio-vue2.2.svg" alt="dependencies"></a>
+  <a href="https://david-dm.org/GMaiolo/subscribr?type=dev"><img src="https://david-dm.org/GMaiolo/portfolio-vue2.2/dev-status.svg" alt="dev dependencies"></a>
+</p>
 
-> Guillermo Maiolo's portfolio
-
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
+### This is my portfolio, check it <a href="gm-portfolio.herokuapp.com">here</a>.
