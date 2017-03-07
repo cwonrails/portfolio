@@ -3,4 +3,4 @@
   <a href="https://david-dm.org/GMaiolo/portfolio"><img src="https://david-dm.org/GMaiolo/portfolio.svg" alt="dependencies"></a>
 </p>
 
-### This is my portfolio, check it <a href="gm-portfolio.herokuapp.com">here</a>.
+<h3 align="center">This is my portfolio, feel free to check it <a href="gm-portfolio.herokuapp.com">here</a>.</h3>
