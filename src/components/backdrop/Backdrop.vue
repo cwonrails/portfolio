@@ -11,7 +11,7 @@
         name: 'backdrop',
         computed: {
             sidenavOpened() {
-                return this.$store.state.sidenav.status === CONSTANTS.CLASSES.OPENED;
+                return this.$store.state.sidenav_status === CONSTANTS.CLASSES.OPENED;
             }
         },
         methods: {

@@ -27,7 +27,7 @@
         },
         computed: {
             sidenavStatus() {
-                return this.$store.state.sidenav.status;
+                return this.$store.state.sidenav_status;
             }
         },
         methods: {
