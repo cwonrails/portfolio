@@ -46,13 +46,11 @@
 <style lang="scss" scoped>
     @import 'src/styles/variables';
     #projects {
-        max-width: 960px;
-        margin: auto;
-        overflow: auto;
         .wrapper {
             @include common-transition;
+            margin: auto;
             text-align: center;
-            padding: 20px 0px;
+            padding: 25px 0px;
         }
         .spinner-wrapper {
             @include mobile-width-breakpoint {
@@ -61,7 +59,7 @@
         }
         .main-title {
             margin: auto;
-            padding: 15px 0px;
+            padding-bottom: 15px;
             width: 50%;
             border-bottom: 2px solid $orange-color;
         }
