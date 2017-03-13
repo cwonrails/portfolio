@@ -8,7 +8,9 @@ const store = new Vuex.Store({
     state: {
         current_path: '/',
         sidenav_status: 'closed',
-        my_repos: null
+        fetched_data: {
+            my_repos: null
+        }
     },
     mutations: {
         [CONSTANTS.MUTATIONS.SIDENAV_OPEN](state) {
@@ -28,7 +30,7 @@ const store = new Vuex.Store({
             state.current_path = to.path;
         },
         [CONSTANTS.MUTATIONS.UPDATE_MY_REPOS](state, res) {
-            state.my_repos = res;
+            state.fetched_data.my_repos = res;
         }
     }
 });
