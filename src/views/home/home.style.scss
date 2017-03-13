@@ -1,11 +1,11 @@
-@import '../../styles/variables';
-@import '../../styles/mixins';
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
 
-div.home {
+.home {
     overflow: auto;
     section {
         width: $common-block-width;
-        header.profile-card {
+        .profile-card {
             padding-bottom: 30px;
             border-bottom: 2px solid $orange-color;
             @include flex-row;
@@ -29,7 +29,7 @@ div.home {
                 }
             }
         }
-        article {
+        .main {
             margin: 30px 0px;
         }
         footer ul {
@@ -44,8 +44,7 @@ div.home {
                 margin-bottom: 15px;
                 transition: color linear .4s;
                 color: $black-color;
-                i {
-                    margin-right: 10px;
+                .icon {
                     font-size: 25px;
                 }
                 a {
@@ -62,10 +61,10 @@ div.home {
 }
 
 @include mobile-width-breakpoint {
-    div.home {
+    .home {
         section {
             width: 100%;
-            padding: 80px 50px;
+            padding: 50px 50px 30px 50px;
             header.profile-card {
                 display: block;
                 text-align: center;
@@ -75,7 +74,7 @@ div.home {
                     margin-bottom: 15px;
                 }
             }
-            article {
+            .main {
                 margin: 25px 0px;
             }
             footer ul {

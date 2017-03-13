@@ -1,4 +1,29 @@
-<template src="./home.template.html"></template>
+<template>
+    <div class="home view">
+        <section>
+            <header class="profile-card">
+                <figure class="picture">
+                    <img height="125" width="125" src="../../assets/images/portrait.png">
+                </figure>
+                <div class="details">
+                    <h1>Guillermo Maiolo</h1>
+                    <h2>Software Developer</h2>
+                </div>
+            </header>
+            <article class="main">
+                <p v-for="pharagraph in home.summary" v-html="pharagraph"></p>
+            </article>
+            <footer>
+                <ul>
+                    <li class="link" v-for="link in home.links">
+                        <i class="icon" :class="link.icon"></i>
+                        <a class="link" target="_blank" :href="link.url">{{ link.text }}</a>
+                    </li>
+                </ul>
+            </footer>
+        </section>
+    </div>
+</template>
 
 <script>
     import home from './home.data';
