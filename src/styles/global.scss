@@ -20,6 +20,8 @@ body,
 }
 
 .view {
+    position: fixed;
+    overflow-x: hidden;
     display: flex;
     align-items: center;
     justify-content: center;

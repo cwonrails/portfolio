@@ -14,7 +14,7 @@
 <script>
     import router from './../../router';
     import Hamburger from './hamburger/Hamburger';
-    import sidenavData from './sidenav.data';
+    import navData from './../../utils/nav.data';
     import CONSTANTS from '../../utils/constants';
 
     export default {
@@ -22,7 +22,7 @@
         components: { Hamburger },
         data() {
             return {
-                links: sidenavData.links
+                links: navData.links
             };
         },
         computed: {

@@ -45,6 +45,7 @@
 
 <style lang="scss" scoped>
     @import 'src/styles/variables';
+    @import 'src/styles/mixins';
     #projects {
         .wrapper {
             @include common-transition;
@@ -64,6 +65,10 @@
             border-bottom: 2px solid $orange-color;
         }
         .repos {
+            margin-top: 150px;
+            @include not-in-desktop {
+                margin-top: auto;
+            }
             width: 100%;
         }
     }

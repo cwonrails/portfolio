@@ -34,3 +34,9 @@ $paddingY: 85px;
         }
     }
 }
+
+@include in-desktop {
+    .sidenav-wrapper {
+        display: none !important;
+    }
+}

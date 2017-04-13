@@ -6,6 +6,14 @@
     @media (max-height: $height-breakpoint) { @content; }
 }
 
+@mixin in-desktop {
+    @media (min-width: $desktop-breakpoint) { @content; }
+}
+
+@mixin not-in-desktop {
+    @media (max-width: $desktop-breakpoint - 1) { @content; }
+}
+
 @mixin flex-row {
     display: flex;
     flex-direction: row;
