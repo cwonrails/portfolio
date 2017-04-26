@@ -1,8 +1,4 @@
 export default {
-    summary: [
-        'Hey, I’m a web & software developer from Buenos Aires, Argentina. I work primarily with Javascript, mostly with <a class="link" href="https://angularjs.org" target="_blank">Angular</a> and <a class="link" target="_blank" href="https://nodejs.org">Node</a>.',
-        'Have a look through some of my <a class="link" href="projects">projects</a> or learn a bit more <a class="link" href="about">about me</a>.'
-    ],
     links: [
         {
             key: 'mail',

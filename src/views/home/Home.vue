@@ -11,7 +11,12 @@
                 </div>
             </header>
             <article class="main">
-                <p v-for="pharagraph in home.summary" v-html="pharagraph"></p>
+                <p>
+                    Hey, I'm a web & software developer from Buenos Aires, Argentina. I work primarily with Javascript, mostly with <a class="link" href="https://angularjs.org" target="_blank">Angular</a>, <a class="link" href="https://cordova.apache.org" target="_blank">Cordova</a> and <a class="link" target="_blank" href="https://nodejs.org">Node</a>.
+                </p>
+                <p>
+                    Have a look through some of my <router-link class="link" to="/projects">projects</router-link> or learn a bit more <router-link class="link" to="/about">about me</router-link>.
+                </p>
             </article>
             <footer>
                 <ul>
