@@ -49,9 +49,8 @@
     #projects {
         .wrapper {
             @include common-transition;
-            margin: auto;
-            text-align: center;
             padding: 25px 0px;
+            text-align: center;
         }
         .spinner-wrapper {
             @include mobile-width-breakpoint {
@@ -65,11 +64,11 @@
             border-bottom: 2px solid $orange-color;
         }
         .repos {
+            width: 100%;
             margin-top: 150px;
             @include not-in-desktop {
                 margin-top: auto;
             }
-            width: 100%;
         }
     }
 

@@ -2,32 +2,30 @@
 
 .navbar-container {
     height: 80px;
-    padding: 20px 0px;
     text-align: center;
     background: hsla(0, 0%, 100%, .8);
     border-bottom: 1px solid #EFEFEF;
-    display: flex;
-    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     overflow: hidden;
-    justify-content: center;
     z-index: 999;
     .name {
-        margin-right: auto;
+        float: left;
         margin-left: 15%;
         font-family: 'Overpass Mono';
-        height: 100%;
         font-size: 35px;
         &:hover {
             cursor: pointer;
         }
     }
     .navbar-wrapper {
-        margin-left: auto;
+        height: 100%;
+        float: right;
         margin-right: 15%;
+        display: flex;
+        align-items: center;
         .nav-link {
             margin: 0 15px;
             &.selected {
