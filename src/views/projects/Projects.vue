@@ -16,7 +16,7 @@
     import store from '../../store';
     import Spinner from '../../components/spinner/Spinner';
     import GhRepo from './ghRepo/GhRepo';
-    import CONSTANTS from '../../utils/constants';
+    import CONSTANTS from '../../utils/constants.json';
     import { GithubRes } from '../../resources';
 
     export default {

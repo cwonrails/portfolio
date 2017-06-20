@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
-import CONSTANTS from './utils/constants';
+import CONSTANTS from './utils/constants.json';
 
 Vue.use(Vuex);
 

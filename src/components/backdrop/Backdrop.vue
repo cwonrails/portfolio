@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import CONSTANTS from '../../utils/constants';
+import CONSTANTS from '../../utils/constants.json';
 
 export default {
     name: 'backdrop',

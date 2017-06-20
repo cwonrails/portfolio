@@ -36,7 +36,7 @@
 </template>
 
 <script>
-import home from './home.data';
+import home from './home.data.json';
 
 export default {
     name: 'home',

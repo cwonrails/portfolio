@@ -14,8 +14,8 @@
 <script>
 import router from './../../router';
 import Hamburger from './hamburger/Hamburger';
-import navData from './../../utils/nav.data';
-import CONSTANTS from '../../utils/constants';
+import navData from './../../utils/nav.data.json';
+import CONSTANTS from '../../utils/constants.json';
 
 export default {
     name: 'sidenav',
