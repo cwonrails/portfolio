@@ -5,22 +5,34 @@
 </template>
 
 <script>
-    import CONSTANTS from '../../utils/constants';
+import CONSTANTS from '../../utils/constants';
 
-    export default {
-        name: 'backdrop',
-        computed: {
-            sidenavOpened() {
-                return this.$store.state.sidenav_status === CONSTANTS.CLASSES.OPENED;
-            }
-        },
-        methods: {
-            closeSidenav() {
-                this.$store.commit(CONSTANTS.MUTATIONS.SIDENAV_CLOSE);
-            }
+export default {
+    name: 'backdrop',
+    computed: {
+        sidenavOpened() {
+            return this.$store.state.sidenav_status === CONSTANTS.CLASSES.OPENED;
         }
-    };
+    },
+    methods: {
+        closeSidenav() {
+            this.$store.commit(CONSTANTS.MUTATIONS.SIDENAV_CLOSE);
+        }
+    }
+};
 
 </script>
 
-<style lang="scss" src="./backdrop.scss" scoped></style>
+<style lang="scss" scoped>
+@import '../../styles/variables';
+.backdrop-container {
+    @include common-transition;
+    z-index: $backdrop-layer;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $backdrop-color;
+}
+</style>
