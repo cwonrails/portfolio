@@ -1,10 +1,10 @@
 <template>
     <div id="projects" class="view">
         <transition name="fadeIn" mode="out-in">
-            <section class="wrapper spinner-wrapper" v-if="!repos" key="spinner">
+            <section v-if="!repos" class="wrapper spinner-wrapper" key="spinner">
                 <spinner size="200px"></spinner>
             </section>
-            <section class="wrapper repos" v-else="repos" key="repos">
+            <section v-else class="wrapper repos" key="repos">
                 <h1 class="main-title">GitHub</h1>
                 <gh-repo v-for="repo in reposByStars" :key="repo.name" v-if="repo.description" :repo="repo"></gh-repo>
             </section>
