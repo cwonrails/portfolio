@@ -51,10 +51,13 @@
             @include common-transition;
             padding: 25px 0px;
             text-align: center;
+            @include mobile-width-breakpoint {
+                padding: 50px 0;
+            }
         }
         .spinner-wrapper {
             @include mobile-width-breakpoint {
-                 padding-top: 100px;
+                 padding-top: 125px;
             }
         }
         .main-title {
@@ -62,13 +65,6 @@
             padding-bottom: 15px;
             width: 50%;
             border-bottom: 2px solid $orange-color;
-        }
-        .repos {
-            width: 100%;
-            margin-top: 150px;
-            @include not-in-desktop {
-                margin-top: auto;
-            }
         }
     }
 
